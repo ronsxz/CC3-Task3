@@ -3,14 +3,22 @@ public class Student {
     private String firstName;
     private String lastName;
     private int age;
+    private String gender;
+    private String course;
+    private int yearLevel;
+    private String email;
     private int contactNumber;
     private String address;
 
-    public Student(int studID, String firstName, String lastName, int age, int contactNumber, String address) {
+    public Student(int studID, String firstName, String lastName, int age, String gender, String course, int yearLevel, String email, int contactNumber, String address) {
         this.studID = studID;
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
+        this.gender = gender;
+        this.course = course;
+        this.yearLevel = yearLevel;
+        this.email = email;
         this.contactNumber = contactNumber;
         this.address = address;
     }
@@ -25,6 +33,18 @@ public class Student {
     }
     public int getAge() { 
         return age; 
+    }
+    public String getGender() { 
+        return gender;  
+    }
+    public String getCourse() { 
+        return course;  
+    }
+    public int getYearLevel() { 
+        return yearLevel;
+    } 
+    public String getEmail() { 
+        return email;
     }
     public int getContactNumber() { 
         return contactNumber; 
